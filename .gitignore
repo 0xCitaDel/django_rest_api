@@ -1,3 +1,4 @@
+db.sqlite3
 /django_api/__pycache__
 /test_api_app/__pycache__
 /test_api_app/migrations/__pycache__
