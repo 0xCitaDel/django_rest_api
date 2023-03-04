@@ -1,0 +1,4 @@
+/django_api/__pycache__
+/test_api_app/__pycache__
+/test_api_app/migrations/__pycache__
+/test_api_app/migrations/0001_initial.py
