@@ -1,8 +1,17 @@
-from django.http import JsonResponse
+from rest_framework import generics
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from .serializers import TestModelSerializer
 from .models import TestModel
+
+class SimpleGenerics(generics.ListCreateAPIView):
+    queryset = TestModel.objects.all()
+    serializer_class = TestModelSerializer
+
+class SimpleGenericsUpdate(generics.UpdateAPIView):
+    queryset = TestModel.objects.all()
+    serializer_class = TestModelSerializer
+    lookup_field = 'id'
 
 class Simple(APIView):
 
